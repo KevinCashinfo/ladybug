@@ -1,2 +1,31 @@
+$navbar-default-bg: #1ABC9C;
+$navbar-default-link-color: white;
+$navbar-default-border: white;
+$navbar-height: 90px;
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.titre{
+	font-size: 30px;
+}
+
+.img_logo{
+	width: 150px;
+	padding-top: 20px;
+	padding-left: 5px;
+}
+
+.sous-titre{
+	padding-top: 30px;
+	color: white;
+	font-size: 15px;
+}
+.full {
+    background: url('https://static.pexels.com/photos/54283/pexels-photo-54283.jpeg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    height: 800px;
+    width: 100%;
+}
