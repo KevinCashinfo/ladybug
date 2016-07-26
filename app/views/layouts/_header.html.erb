@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default nav-no-space">
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -15,7 +15,7 @@
           <%= image_tag("Yeah_white.png", :class => "img_logo") %>
         </div>
 
-        <div class="col-xs-6 sous-titre">
+        <div class="col-xs-6 sous-logo">
            <ul class="nav navbar-nav navbar-right">
 
             <li>Get ready to Learn, Share and Succeed !</li>
@@ -34,8 +34,15 @@
       <ul class="nav navbar-nav navbar-right">
         <li><%= link_to "Home", root_path %></li>
         <li><%= link_to "Home", root_path %></li>
-       
+
+        <% if user_signed_in? %>
+          <li><%= link_to "Log out", destroy_user_session_path, method: :delete %></li>
+        <% else %>
+                  <li><%= link_to "Sign in", new_user_session_path %></li>
+        <% end %>
+
       </ul>
     </div><!-- /.navbar-collapse -->
+
   </div><!-- /.container-fluid -->
 </nav>

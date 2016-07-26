@@ -1,4 +1,58 @@
-<div class="container-fluid full">
-<h1>Découvrez la première plateforme de partage</h1>
+<div class="container-fluid coverimg">
+
+	<div class="row">
+		<div class="col-xs-2">
+		</div>
+
+		<div class="col-xs-8">
+			<h1>The first platform to share what you know and start learning new things</h1>
+		</div>
+
+		<div class="col-xs-2">
+		</div>
+
+	</div>
+</div>
+
+<div class="row">
+
+	<div class="col-xs-4 textContainer categories">
+		<span class="glyphicon glyphicon-console icone">
+		</span>
+		<br>
+	  <span class="text-icone">Code (HTML, CSS, C++, etc.)</span>
+	</div>
+
+	<div class="col-xs-4 textContainer categories">
+		<span class="glyphicon glyphicon-console icone">
+		</span>
+		<br>
+	  <span class="text-icone">Code (HTML, CSS, C++, etc.)</span>
+	</div>
+
+	<div class="col-xs-4 textContainer categories">
+		<span class="glyphicon glyphicon-console icone">
+		</span>
+		<br>
+	  <span class="text-icone">Code (HTML, CSS, C++, etc.)</span>
+	</div>
 
 </div>
+
+
+<div class="container-fluid form">
+	<p>Vous n'avez pas encore de compte ? inscrivez-vous !</p>
+
+	<% if user_signed_in? %>
+		#do something
+	<% else %>
+		<p>
+			<%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
+			<%= link_to "Sign up", new_user_registration_path, class: "btn btn-default btn-lg" %>
+		</p>
+	<% end %>
+
+</div>
+
+
+
